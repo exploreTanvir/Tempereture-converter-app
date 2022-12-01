@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>temperature converter app</title>
+    <link rel="stylesheet" href="./js/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="justify-content-center mt-5 row box col-lg-12 d-flex rounded-3 text-center w-100">
+        <div class="col-lg-4">
+          
+            <label for="celsius">celsius</label>
+            <input
+              type="number"
+              id="celsius"
+              name=""
+              placeholder="0.00"
+              oninput="celToFar()"
+            />
+          </div>
+          <div class="col-lg-3 image">
+            <img src="./img/icons8-arrow-64.png" alt="" class="" />
+          </div>
+          <div class="col-lg-4">
+            <label for="fahrenheit">fahrenheit</label>
+            <input
+              type="number"
+              id="fahrenheit"
+              name=""
+              placeholder="0.00"
+              oninput="farToCel()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/js/bootstrap.bundle.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
